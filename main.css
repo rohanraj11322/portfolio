@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+:root {
+    --primary-color: #F9AA33;
+    --off-white: #d7e4e3;
+    --dark-gray: #6B7280;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* max-width: 900px;
+    margin: auto; */
+    padding: 0;
+    margin: 0;
+
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+/** container **/
+.container {
+    padding: 0.5rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    
+    }
+
+.link-primary {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    height: 2rem;
+    text-decoration: none;
+       
+    
+}
+
+.link-secondary {
+    padding: 0.5rem 1rem;
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    height: 2rem;
+    text-decoration: none;
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+    padding: 2rem;
+
+}
+
+.hero .hero-img {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+/** sections **/
+
+.section {
+    padding: 1rem;
+}
+
+.section h1 {
+    margin-top: 0;
+    text-align: center;
+
+}
+
+.ow {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+/** footers **/
+
+.footer {
+    
+    background-color: var(--primary-color);
+    text-align: center;
+    border-top-right-radius: 1rem;
+    min-width: auto;
+    margin-top: 50px;
+    padding: 0.5rem 1rem;
+}
+.footer .footer-header{
+    color:black;
+    font-size: large;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.footer .link {
+    color: white
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.projects{
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.off-white{
+    max-width: 900px;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    background-color: var(--off-white);
+}
+  .con {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;   
+  }
+  
+  .con img {
+    width:250px;
+  height:250px;
+  border:1px solid black;
+  border-radius: 50%;
+  }
+  .imgL{
+    width: 30px;
+    height: 30px;
+  }
+
+
+.para{ 
+        padding: 0 1rem;
+        font-family: 'Roboto Mono', monospace;
+        max-width: 800px;
+        margin: auto;
+       
+}
+.para-skills{
+    font-family: 'Roboto Mono', monospace;
+    margin: auto;
+    max-width: fit-content;
+}
+#para-skills{
+    font-family: 'Roboto Mono', monospace;
+    padding: 1rem 1rem;
+}
+.space{
+    margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+
+    .navigation .nav-brand {
+        text-align: center;
+    }
+    .link{
+        margin: auto;
+        padding: 5px 5px;
+    }
+
+    .navigation .nav-pills{
+        text-align: center;
+    }
+
+    nav .link{
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .hero .hero-img{
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+    .ol{
+        max-width: fit-content;
+        padding: 0rem 1rem; 
+        margin: auto;
+    }
+
+  }
